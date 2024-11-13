@@ -166,35 +166,39 @@ body{
   }
 
   @media (max-width: 600px) {
-    .responsive-table,
-    .responsive-table tbody,
-    .responsive-table tr,
-    .responsive-table th,
-    .responsive-table td {
+    .responsive-table {
       display: block;
-      width: 100%;
     }
-
-    .responsive-table tr {
+  
+    .responsive-table thead {
+      display: none;
+    }
+  
+    .responsive-table tbody tr {
+      display: grid;
+      grid-template-columns: 1fr 2fr; /* Adjust to desired layout */
       margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
     }
-
-    .responsive-table th,
+  
     .responsive-table td {
-      text-align: right;
-      padding-left: 50%;
-      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      border: none;
     }
-
-    .responsive-table th::before,
-    .responsive-table td::before {
-      content: attr(data-label);
-      position: absolute;
-      left: 0;
-      width: 50%;
-      padding-left: 10px;
-      font-weight: bold;
-      text-align: left;
+  
+    /* Remove the 'Section' labels */
+    .responsive-table td img {
+      max-width: 30px;
+      height: auto;
+      margin-right: 10px;
+    }
+  
+    .Advertise, .contact, .login, .search-container{
+        display: none;
     }
   }
   .bome{
@@ -254,6 +258,7 @@ padding: 7px;
     justify-content: center;
     border-radius: 20px;
     margin: 5px;
+    width: 100%;
   }
   .trump2{
     display: flex;
