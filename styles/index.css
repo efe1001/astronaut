@@ -267,6 +267,16 @@ padding: 7px;
     
     
   }
+
+  .trump11{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 5px;
+    width: 75%;
+    
+    
+  }
   .trump2{
     display: flex;
     justify-content: center;
