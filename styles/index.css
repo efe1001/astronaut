@@ -222,10 +222,34 @@ th {
         z-index: 2;
     }
 }
+@media (max-width: 900px) {
+    footer .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .twitter{
+        display: none;
+    }
+    .telegram{
+        display: none;
+    }
+    .addcoin{
+        background-color: yellow;
+        border-radius: 15px;
+        padding: 10px;                                                                     font-family: 'Cartoon', sans-serif;
+        font-family: 'Cartoon', sans-serif; 
+        font-size: 18px;
+                   width: 100px;                                                        
+      }
+      .logo{
+        display: none;
+      }
+    }
+
     .Advertise, .contact, .login, .search-container{
         display: none;
     }
-  }
+  
   .bome{
     width: 30px;
     border-radius: 30px;
@@ -306,7 +330,6 @@ padding: 7px;
   }
 
 
-
   .footerbar{
     background-color: #24262b;
     padding: 20px;
@@ -337,3 +360,19 @@ padding: 7px;
     color: #bbbbbb;
     display: block;
 }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
