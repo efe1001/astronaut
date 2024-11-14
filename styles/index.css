@@ -13,22 +13,22 @@ body{
 
 .header{
     background-color: #29293a;
-    padding: px;
+    padding: 0px;
 }
 
 .headerbar{
     display: flex;
     justify-content: center;
     padding: 10px;
-    margin: px;
+    margin: 0px;
     margin-left: 200px;
-    margin-right: 200px;
+   justify-content: space-between;
 }
 .logo{
     width: 100px;
     height: 50px;
     border-radius: 10px;
-    margin-left: -150px;
+ 
 }
   
 
@@ -74,12 +74,14 @@ body{
   .telegram{
     width: 45px;
     height: 33px;
-    margin-top: 4px;
+    margin-top: 9px;
+    margin-left: 1000px;
   }
   .twitter{
     width: 60px;
     height: 50px;
-    margin-top: -5px;
+    margin-left: -120px;
+   
   }
 
   .addcoin{
@@ -88,7 +90,7 @@ body{
     padding: 10px;                                                                     font-family: 'Cartoon', sans-serif;
     font-family: 'Cartoon', sans-serif; 
     font-size: 18px;
-                                                                       
+                                                      
   }
 
   .Advertise{
@@ -194,6 +196,14 @@ th {
     .responsive-table {
         min-width: 600px; /* Force horizontal scroll on small screens */
     }
+    .addcoin{
+        background-color: yellow;
+        border-radius: 15px;
+        padding: 10px;                                                                     font-family: 'Cartoon', sans-serif;
+        font-family: 'Cartoon', sans-serif; 
+        font-size: 18px;
+                   width: 100px;                                                        
+      }
 
     /* Ensure "Name" column stays fixed */
     .fixed-column {
