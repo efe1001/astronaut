@@ -131,72 +131,78 @@ body{
 
 
 
-  .table-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: auto; /* Enables horizontal scrolling on small screens */
-    padding: 20px;
+  /* Table Wrapper to enable horizontal scrolling */
+  .table-wrapper {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
     font-family: 'Cartoon', sans-serif;   ;
-    border-radius: 0px;
-  }
+}
 
-  .responsive-table {
+/* Table Styling */
+.responsive-table {
+    width: 100%;
     border-collapse: collapse;
-    width: 75%; /* Table will only be as wide as its content */
-    margin: auto;
+    min-width: 1000px; /* To ensure horizontal scrolling when table is too wide */
     font-family: 'Cartoon', sans-serif;   ;
-    color: wheat;
-    border-radius: px;
-  }
+}
 
-  .responsive-table th,
-  .responsive-table td {
-    padding: 12px;
-    border: 1px solid #20202a;
-    text-align: center;
-    border-radius: 10px;
-  }
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #20202a;
+    white-space: nowrap;
+}
 
-  .responsive-table th {
-    background-color: rgb(133, 133, 32);
+th {
+    background-color: #4CAF50;
     color: white;
-    font-family: 'Cartoon', sans-serif;   ;
-    font-size: 20px;
-  }
+}
 
-  @media (max-width: 600px) {
+/* Fixed "Name" Column Styling */
+.fixed-column {
+    position: sticky;
+    left: 0;
+    background-color: #20202a;
+    z-index: 2; /* Ensure it stays above other columns */
+    font-weight: bold;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: adds shadow to make it more distinct */
+}
+
+/* Button and Icon Styling */
+.vote {
+    background-color: #4CAF50;
+    color: #20202a;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.vote:hover {
+    background-color: #45a049;
+}
+
+.bome, .eth {
+    width: 30px;
+    height: 30px;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
     .responsive-table {
-      display: block;
+        min-width: 600px; /* Force horizontal scroll on small screens */
     }
-  
-    .responsive-table thead {
-      display: none;
+
+    /* Ensure "Name" column stays fixed */
+    .fixed-column {
+        position: sticky;
+        left: 0;
+        background-color: #20202a;
+        z-index: 2;
     }
-  
-    .responsive-table tbody tr {
-      display: grid;
-      grid-template-columns: 1fr 2fr; /* Adjust to desired layout */
-      margin-bottom: 15px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-  
-    .responsive-table td {
-      display: flex;
-      align-items: center;
-      padding: 8px;
-      border: none;
-    }
-  
-    /* Remove the 'Section' labels */
-    .responsive-table td img {
-      max-width: 30px;
-      height: auto;
-      margin-right: 10px;
-    }
-  
+}
     .Advertise, .contact, .login, .search-container{
         display: none;
     }
@@ -258,7 +264,8 @@ padding: 7px;
     justify-content: center;
     border-radius: 20px;
     margin: 5px;
-    width: 100%;
+    width: 75%;
+    
   }
   .trump2{
     display: flex;
