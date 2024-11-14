@@ -141,6 +141,7 @@ body{
     -webkit-overflow-scrolling: touch;
     width: 100%;
     font-family: 'Cartoon', sans-serif;   ;
+    color: white;
 }
 
 /* Table Styling */
