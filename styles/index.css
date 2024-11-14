@@ -196,6 +196,12 @@ th {
     .responsive-table {
         min-width: 600px; /* Force horizontal scroll on small screens */
     }
+    .twitter{
+        display: none;
+    }
+    .telegram{
+        display: none;
+    }
     .addcoin{
         background-color: yellow;
         border-radius: 15px;
@@ -203,6 +209,9 @@ th {
         font-family: 'Cartoon', sans-serif; 
         font-size: 18px;
                    width: 100px;                                                        
+      }
+      .logo{
+        display: none;
       }
 
     /* Ensure "Name" column stays fixed */
