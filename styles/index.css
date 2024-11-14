@@ -264,7 +264,7 @@ padding: 7px;
     justify-content: center;
     border-radius: 20px;
     margin: 5px;
-    width: 75%;
+    
     
   }
   .trump2{
@@ -275,3 +275,36 @@ padding: 7px;
     margin: 5px;
     flex-wrap: wrap;
   }
+
+
+
+  .footerbar{
+    background-color: #24262b;
+    padding: 20px;
+   
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+}
+
+
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
